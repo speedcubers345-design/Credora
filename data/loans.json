@@ -1,5 +1,16 @@
 [
   {
+    "id": "LN-1019",
+    "date": "2025-12-07",
+    "status": "Pending",
+    "borrower": "0xa961837163c7c03DFb94f6983465d6A532f99c50",
+    "amount": "12",
+    "collateral": "0.001 fBTC",
+    "term": "30 Days",
+    "score": 781,
+    "hasRedFlag": false
+  },
+  {
     "id": "LN-1018",
     "date": "2025-12-07",
     "status": "Pending",
