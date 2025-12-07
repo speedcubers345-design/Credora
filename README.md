@@ -1,3 +1,5 @@
+Deployed website : https://microloans2.vercel.app
+
 # 🏦 Credora: AI-Powered Micro-Lending on Flare
 
 **Credora** is a next-generation decentralized micro-lending platform built on the **Flare Network**. It bridges the gap between Web2 identity and Web3 finance, enabling under-collateralized and collateralized loans using **Bitcoin (fBTC)** as collateral.
