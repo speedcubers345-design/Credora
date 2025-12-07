@@ -1,0 +1,2089 @@
+[debug] [2025-12-07T06:08:38.424Z] ----------------------------------------------------------------------
+[debug] [2025-12-07T06:08:38.426Z] Command:       /usr/local/bin/node /Users/sarthakgupta/microloans2/node_modules/.bin/firebase deploy --only hosting
+[debug] [2025-12-07T06:08:38.426Z] CLI Version:   14.27.0
+[debug] [2025-12-07T06:08:38.427Z] Platform:      darwin
+[debug] [2025-12-07T06:08:38.427Z] Node Version:  v22.19.0
+[debug] [2025-12-07T06:08:38.427Z] Time:          Sun Dec 07 2025 11:38:38 GMT+0530 (India Standard Time)
+[debug] [2025-12-07T06:08:38.427Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-07T06:08:38.428Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-12-07T06:08:38.551Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-07T06:08:38.551Z] > authorizing via signed-in user (sangitaguptasarthak675@gmail.com)
+[debug] [2025-12-07T06:08:38.551Z] [iam] checking project studio-3423424153-4fd5e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-12-07T06:08:38.551Z] Checked if tokens are valid: false, expires at: 1764846340759
+[debug] [2025-12-07T06:08:38.551Z] Checked if tokens are valid: false, expires at: 1764846340759
+[debug] [2025-12-07T06:08:38.552Z] > refreshing access token with scopes: []
+[debug] [2025-12-07T06:08:38.552Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-12-07T06:08:38.552Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-12-07T06:08:38.827Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-12-07T06:08:38.827Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-12-07T06:08:38.837Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions [none]
+[debug] [2025-12-07T06:08:38.837Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions x-goog-quota-user=projects/studio-3423424153-4fd5e
+[debug] [2025-12-07T06:08:38.837Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-07T06:08:39.164Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-12-07T06:08:39.164Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-12-07T06:08:40.253Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions 200
+[debug] [2025-12-07T06:08:40.253Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-07T06:08:40.253Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:08:40.253Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:08:40.253Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e [none]
+[debug] [2025-12-07T06:08:40.737Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e 200
+[debug] [2025-12-07T06:08:40.737Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e {"projectId":"studio-3423424153-4fd5e","projectNumber":"649063486002","displayName":"Firebase app","name":"projects/studio-3423424153-4fd5e","resources":{"hostingSite":"studio-3423424153-4fd5e"},"state":"ACTIVE","etag":"1_ee995535-48cb-4f68-9eb4-5d0eaff5f55d"}
+[debug] [2025-12-07T06:08:42.159Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:08:42.159Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:08:42.159Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites pageToken=&pageSize=10
+[debug] [2025-12-07T06:08:43.225Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites 200
+[debug] [2025-12-07T06:08:43.225Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites {"sites":[{"name":"projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e","defaultUrl":"https://studio-3423424153-4fd5e.web.app","appId":"1:649063486002:web:acc24cc9dab7d33a16222b","type":"DEFAULT_SITE"}]}
+[debug] [2025-12-07T06:08:43.225Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:08:43.225Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:08:43.225Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:649063486002:web:acc24cc9dab7d33a16222b/config [none]
+[debug] [2025-12-07T06:08:44.182Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:649063486002:web:acc24cc9dab7d33a16222b/config 200
+[debug] [2025-12-07T06:08:44.182Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:649063486002:web:acc24cc9dab7d33a16222b/config {"projectId":"studio-3423424153-4fd5e","appId":"1:649063486002:web:acc24cc9dab7d33a16222b","storageBucket":"studio-3423424153-4fd5e.firebasestorage.app","apiKey":"AIzaSyBZfVwZCZ08qJ4mR7gFwDQ2aUyKdLfkSpQ","authDomain":"studio-3423424153-4fd5e.firebaseapp.com","messagingSenderId":"649063486002","projectNumber":"649063486002","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-12-07T06:08:46.940Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:08:46.940Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:08:46.940Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e [none]
+[debug] [2025-12-07T06:08:47.422Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e 200
+[debug] [2025-12-07T06:08:47.422Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e {"name":"projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e","defaultUrl":"https://studio-3423424153-4fd5e.web.app","appId":"1:649063486002:web:acc24cc9dab7d33a16222b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 16.0.7 (Turbopack)
+
+[info]    - Environments: .env.local, .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ⨯ ERROR: This build is using Turbopack, with a `webpack` config and no `turbopack` config.
+   This may be a mistake.
+
+   As of Next.js 16 Turbopack is enabled by default and
+   custom webpack configurations may need to be migrated to Turbopack.
+
+   NOTE: your `webpack` config may have been added by a configuration plugin.
+
+   To configure Turbopack, see https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
+
+   TIP: Many applications work fine under Turbopack with no configuration,
+   if that is the case for you, you can silence this error by passing the
+   `--turbopack` or `--webpack` flag explicitly or simply setting an 
+   empty turbopack config in your Next config file (e.g. `turbopack: {}`).
+
+[info] 
+
+[info] > Build error occurred
+
+[info] Error: Call retries were exceeded
+    at ignore-listed frames {
+  type: 'WorkerError'
+}
+
+[debug] [2025-12-07T06:08:48.799Z] Error: ENOENT: no such file or directory, open '/Users/sarthakgupta/microloans2/.next/server/middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-12-07T06:09:25.525Z] ----------------------------------------------------------------------
+[debug] [2025-12-07T06:09:25.527Z] Command:       /usr/local/bin/node /Users/sarthakgupta/microloans2/node_modules/.bin/firebase deploy --only hosting
+[debug] [2025-12-07T06:09:25.527Z] CLI Version:   14.27.0
+[debug] [2025-12-07T06:09:25.527Z] Platform:      darwin
+[debug] [2025-12-07T06:09:25.527Z] Node Version:  v22.19.0
+[debug] [2025-12-07T06:09:25.527Z] Time:          Sun Dec 07 2025 11:39:25 GMT+0530 (India Standard Time)
+[debug] [2025-12-07T06:09:25.527Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-07T06:09:25.615Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-07T06:09:25.615Z] > authorizing via signed-in user (sangitaguptasarthak675@gmail.com)
+[debug] [2025-12-07T06:09:25.615Z] [iam] checking project studio-3423424153-4fd5e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-12-07T06:09:25.616Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:25.616Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:25.616Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions [none]
+[debug] [2025-12-07T06:09:25.616Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions x-goog-quota-user=projects/studio-3423424153-4fd5e
+[debug] [2025-12-07T06:09:25.616Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-07T06:09:26.892Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions 200
+[debug] [2025-12-07T06:09:26.893Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-07T06:09:26.893Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:26.893Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:26.894Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e [none]
+[debug] [2025-12-07T06:09:27.403Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e 200
+[debug] [2025-12-07T06:09:27.404Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e {"projectId":"studio-3423424153-4fd5e","projectNumber":"649063486002","displayName":"Firebase app","name":"projects/studio-3423424153-4fd5e","resources":{"hostingSite":"studio-3423424153-4fd5e"},"state":"ACTIVE","etag":"1_ee995535-48cb-4f68-9eb4-5d0eaff5f55d"}
+[debug] [2025-12-07T06:09:28.416Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:28.416Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:28.416Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites pageToken=&pageSize=10
+[debug] [2025-12-07T06:09:29.408Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites 200
+[debug] [2025-12-07T06:09:29.408Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites {"sites":[{"name":"projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e","defaultUrl":"https://studio-3423424153-4fd5e.web.app","appId":"1:649063486002:web:acc24cc9dab7d33a16222b","type":"DEFAULT_SITE"}]}
+[debug] [2025-12-07T06:09:29.408Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:29.408Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:29.409Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:649063486002:web:acc24cc9dab7d33a16222b/config [none]
+[debug] [2025-12-07T06:09:30.555Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:649063486002:web:acc24cc9dab7d33a16222b/config 200
+[debug] [2025-12-07T06:09:30.555Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:649063486002:web:acc24cc9dab7d33a16222b/config {"projectId":"studio-3423424153-4fd5e","appId":"1:649063486002:web:acc24cc9dab7d33a16222b","storageBucket":"studio-3423424153-4fd5e.firebasestorage.app","apiKey":"AIzaSyBZfVwZCZ08qJ4mR7gFwDQ2aUyKdLfkSpQ","authDomain":"studio-3423424153-4fd5e.firebaseapp.com","messagingSenderId":"649063486002","projectNumber":"649063486002","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-12-07T06:09:33.239Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:33.239Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:09:33.239Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e [none]
+[debug] [2025-12-07T06:09:33.695Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e 200
+[debug] [2025-12-07T06:09:33.695Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e {"name":"projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e","defaultUrl":"https://studio-3423424153-4fd5e.web.app","appId":"1:649063486002:web:acc24cc9dab7d33a16222b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 16.0.7 (Turbopack)
+
+[info]    - Environments: .env.local, .env
+
+
+[info]    Creating an optimized production build ...
+
+[info] 
+
+[info] > Build error occurred
+
+[info] Error: Turbopack build failed with 40 errors:
+./node_modules/thread-stream/test/ts.test.ts
+Missing module type
+The module type effect must be applied before adding Ecmascript transforms
+
+
+./node_modules/thread-stream/test/ts/to-file.ts
+Missing module type
+The module type effect must be applied before adding Ecmascript transforms
+
+
+./node_modules/thread-stream/README.md
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/dir with spaces/test-package.zip
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/ts-commonjs-default-export.zip
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/ts.test.ts
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/ts/to-file.ts
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/ts/transpile.sh
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/yarnrc.yml
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/LICENSE:1:5
+Parsing ecmascript source code failed
+> 1 | MIT License
+    |     ^^^^^^^
+  2 |
+  3 | Copyright (c) 2021 Matteo Collina
+  4 |
+
+Expected ';', '}' or <eof>
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/LICENSE [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+
+./node_modules/thread-stream/test/syntax-error.mjs:2:7
+Parsing ecmascript source code failed
+  1 | // this is a syntax error
+> 2 | import
+    |       ^
+  3 |
+
+Expected 'from', got '<eof>'
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/syntax-error.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+
+./node_modules/thread-stream/test
+Module not found: Can't resolve './ROOT/node_modules/thread-stream/test/close-on-gc.js'
+server relative imports are not implemented yet. Please try an import relative to the file you are importing from.
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test
+Module not found: Can't resolve './ROOT/node_modules/thread-stream/test/create-and-exit.js'
+server relative imports are not implemented yet. Please try an import relative to the file you are importing from.
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/thread-management.test.js:112:17
+Module not found: Can't resolve '/ROOT/node_modules/thread-stream/test/close-on-gc.js'
+  110 | test('close the work if out of scope on gc', { skip: !global.WeakRef }, async function (t) {
+  111 |   const dest = file()
+> 112 |   const child = fork(join(__dirname, 'close-on-gc.js'), [dest], {
+      |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 113 |     execArgv: ['--expose-gc']
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 114 |   })
+      | ^^^^^
+  115 |
+  116 |   const [code] = await once(child, 'exit')
+  117 |   t.equal(code, 0)
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/thread-management.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/thread-management.test.js:13:17
+Module not found: Can't resolve '/ROOT/node_modules/thread-stream/test/create-and-exit.js'
+  11 | test('exits with 0', async function (t) {
+  12 |   const dest = file()
+> 13 |   const child = fork(join(__dirname, 'create-and-exit.js'), [dest])
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 |   const [code] = await once(child, 'exit')
+  16 |   t.equal(code, 0)
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/thread-management.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/esm.test.mjs:4:1
+Module not found: Can't resolve 'desm'
+  2 | import { readFile } from 'fs'
+  3 | import ThreadStream from '../index.js'
+> 4 | import { join } from 'desm'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { pathToFileURL } from 'url'
+  6 | import { file } from './helper.js'
+  7 |
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/esm.test.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/multibyte-chars.test.mjs:4:1
+Module not found: Can't resolve 'desm'
+  2 | import { readFile } from 'fs'
+  3 | import ThreadStream from '../index.js'
+> 4 | import { join } from 'desm'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { file } from './helper.js'
+  6 |
+  7 | test('break up utf8 multibyte (sync)', (t) => {
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/multibyte-chars.test.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/bench.js:3:15
+Module not found: Can't resolve 'fastbench'
+  1 | 'use strict'
+  2 |
+> 3 | const bench = require('fastbench')
+    |               ^^^^^^^^^^^^^^^^^^^^
+  4 | const SonicBoom = require('sonic-boom')
+  5 | const ThreadStream = require('.')
+  6 | const Console = require('console').Console
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/bench.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/commonjs-fallback.test.js:14:22
+Module not found: Can't resolve 'pino-elasticsearch'
+  12 |   t.plan(6)
+  13 |
+> 14 |   const modulePath = require.resolve('pino-elasticsearch')
+     |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 |   t.match(modulePath, /.*\.zip.*/)
+  16 |
+  17 |   const stream = new ThreadStream({
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/commonjs-fallback.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/base.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { readFile } = require('fs')
+  6 | const { file } = require('./helper')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/base.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/bench.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const ThreadStream = require('..')
+  6 | const { file } = require('./helper')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/bench.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/bundlers.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { file } = require('./helper')
+  6 | const ThreadStream = require('..')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/bundlers.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/commonjs-fallback.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { MessageChannel } = require('worker_threads')
+  6 | const { once } = require('events')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/commonjs-fallback.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/context.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const ThreadStream = require('..')
+  6 | const { version } = require('../package.json')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/context.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/end.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { readFile } = require('fs')
+  6 | const { file } = require('./helper')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/end.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/esm.test.mjs:1:1
+Module not found: Can't resolve 'tap'
+> 1 | import { test } from 'tap'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { readFile } from 'fs'
+  3 | import ThreadStream from '../index.js'
+  4 | import { join } from 'desm'
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/esm.test.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/event.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const ThreadStream = require('..')
+  6 |
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/event.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/helper.js:6:11
+Module not found: Can't resolve 'tap'
+  4 | const { tmpdir } = require('os')
+  5 | const { unlinkSync } = require('fs')
+> 6 | const t = require('tap')
+    |           ^^^^^^^^^^^^^^
+  7 |
+  8 | const files = []
+  9 | let count = 0
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/helper.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/indexes.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const indexes = require('../lib/indexes')
+  5 |
+  6 | for (const index of Object.keys(indexes)) {
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/indexes.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/multibyte-chars.test.mjs:1:1
+Module not found: Can't resolve 'tap'
+> 1 | import { test } from 'tap'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { readFile } from 'fs'
+  3 | import ThreadStream from '../index.js'
+  4 | import { join } from 'desm'
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/multibyte-chars.test.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/never-drain.test.js:1:18
+Module not found: Can't resolve 'tap'
+> 1 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  2 | const ThreadStream = require('../index')
+  3 | const { join } = require('path')
+  4 |
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/never-drain.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/pkg/index.js:7:18
+Module not found: Can't resolve 'tap'
+   5 |  */
+   6 |
+>  7 | const { test } = require('tap')
+     |                  ^^^^^^^^^^^^^^
+   8 | const { join } = require('path')
+   9 | const { file } = require('../helper')
+  10 | const ThreadStream = require('../..')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/pkg/index.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/pkg/pkg.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const config = require('./pkg.config.json')
+  5 | const { promisify } = require('util')
+  6 | const { unlink } = require('fs/promises')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/pkg/pkg.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/post-message.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { once } = require('events')
+  6 | const { MessageChannel } = require('worker_threads')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/post-message.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/string-limit-2.test.js:3:11
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const t = require('tap')
+    |           ^^^^^^^^^^^^^^
+  4 |
+  5 | if (process.env.CI) {
+  6 |   t.skip('skip on CI')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/string-limit-2.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/string-limit.test.js:3:11
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const t = require('tap')
+    |           ^^^^^^^^^^^^^^
+  4 |
+  5 | if (process.env.CI) {
+  6 |   t.skip('skip on CI')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/string-limit.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/thread-management.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { fork } = require('child_process')
+  5 | const { join } = require('path')
+  6 | const { readFile } = require('fs').promises
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/thread-management.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/transpiled.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { file } = require('./helper')
+  6 | const ThreadStream = require('..')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/transpiled.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/context.test.js:7:1
+Module not found: Can't resolve 'why-is-node-running'
+   5 | const ThreadStream = require('..')
+   6 | const { version } = require('../package.json')
+>  7 | require('why-is-node-running')
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | test('get context', (t) => {
+  10 |   const stream = new ThreadStream({
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/context.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/helper.js:33:15
+Module not found: Can't resolve 'why-is-node-running'
+  31 |
+  32 | if (process.env.SKIP_PROCESS_EXIT_CHECK !== 'true') {
+> 33 |   const why = require('why-is-node-running')
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |   setInterval(why, 10000).unref()
+  35 | }
+  36 |
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/helper.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+
+[debug] [2025-12-07T06:09:41.222Z] Error: ENOENT: no such file or directory, open '/Users/sarthakgupta/microloans2/.next/server/middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-12-07T06:10:59.923Z] ----------------------------------------------------------------------
+[debug] [2025-12-07T06:10:59.924Z] Command:       /usr/local/bin/node /Users/sarthakgupta/microloans2/node_modules/.bin/firebase deploy --only hosting
+[debug] [2025-12-07T06:10:59.924Z] CLI Version:   14.27.0
+[debug] [2025-12-07T06:10:59.924Z] Platform:      darwin
+[debug] [2025-12-07T06:10:59.924Z] Node Version:  v22.19.0
+[debug] [2025-12-07T06:10:59.925Z] Time:          Sun Dec 07 2025 11:40:59 GMT+0530 (India Standard Time)
+[debug] [2025-12-07T06:10:59.925Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-07T06:11:00.012Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-07T06:11:00.012Z] > authorizing via signed-in user (sangitaguptasarthak675@gmail.com)
+[debug] [2025-12-07T06:11:00.012Z] [iam] checking project studio-3423424153-4fd5e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-12-07T06:11:00.012Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:00.012Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:00.013Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions [none]
+[debug] [2025-12-07T06:11:00.013Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions x-goog-quota-user=projects/studio-3423424153-4fd5e
+[debug] [2025-12-07T06:11:00.013Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-07T06:11:01.282Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions 200
+[debug] [2025-12-07T06:11:01.282Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-3423424153-4fd5e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-07T06:11:01.283Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:01.283Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:01.283Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e [none]
+[debug] [2025-12-07T06:11:01.779Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e 200
+[debug] [2025-12-07T06:11:01.779Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e {"projectId":"studio-3423424153-4fd5e","projectNumber":"649063486002","displayName":"Firebase app","name":"projects/studio-3423424153-4fd5e","resources":{"hostingSite":"studio-3423424153-4fd5e"},"state":"ACTIVE","etag":"1_ee995535-48cb-4f68-9eb4-5d0eaff5f55d"}
+[debug] [2025-12-07T06:11:02.784Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:02.784Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:02.784Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites pageToken=&pageSize=10
+[debug] [2025-12-07T06:11:03.703Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites 200
+[debug] [2025-12-07T06:11:03.703Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites {"sites":[{"name":"projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e","defaultUrl":"https://studio-3423424153-4fd5e.web.app","appId":"1:649063486002:web:acc24cc9dab7d33a16222b","type":"DEFAULT_SITE"}]}
+[debug] [2025-12-07T06:11:03.703Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:03.703Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:03.703Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:649063486002:web:acc24cc9dab7d33a16222b/config [none]
+[debug] [2025-12-07T06:11:04.974Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:649063486002:web:acc24cc9dab7d33a16222b/config 200
+[debug] [2025-12-07T06:11:04.974Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:649063486002:web:acc24cc9dab7d33a16222b/config {"projectId":"studio-3423424153-4fd5e","appId":"1:649063486002:web:acc24cc9dab7d33a16222b","storageBucket":"studio-3423424153-4fd5e.firebasestorage.app","apiKey":"AIzaSyBZfVwZCZ08qJ4mR7gFwDQ2aUyKdLfkSpQ","authDomain":"studio-3423424153-4fd5e.firebaseapp.com","messagingSenderId":"649063486002","projectNumber":"649063486002","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-12-07T06:11:07.633Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:07.634Z] Checked if tokens are valid: true, expires at: 1765091317827
+[debug] [2025-12-07T06:11:07.634Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e [none]
+[debug] [2025-12-07T06:11:08.069Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e 200
+[debug] [2025-12-07T06:11:08.070Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e {"name":"projects/studio-3423424153-4fd5e/sites/studio-3423424153-4fd5e","defaultUrl":"https://studio-3423424153-4fd5e.web.app","appId":"1:649063486002:web:acc24cc9dab7d33a16222b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 16.0.7 (Turbopack)
+
+[info]    - Environments: .env.local, .env
+
+
+[info]    Creating an optimized production build ...
+
+[info] 
+
+[info] > Build error occurred
+
+[info] Error: Turbopack build failed with 40 errors:
+./node_modules/thread-stream/test/ts.test.ts
+Missing module type
+The module type effect must be applied before adding Ecmascript transforms
+
+
+./node_modules/thread-stream/test/ts/to-file.ts
+Missing module type
+The module type effect must be applied before adding Ecmascript transforms
+
+
+./node_modules/thread-stream/README.md
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/dir with spaces/test-package.zip
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/ts-commonjs-default-export.zip
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/ts.test.ts
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/ts/to-file.ts
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/ts/transpile.sh
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/test/yarnrc.yml
+Unknown module type
+This module doesn't have an associated type. Use a known file extension, or register a loader for it.
+
+Read more: https://nextjs.org/docs/app/api-reference/next-config-js/turbo#webpack-loaders
+
+
+./node_modules/thread-stream/LICENSE:1:5
+Parsing ecmascript source code failed
+> 1 | MIT License
+    |     ^^^^^^^
+  2 |
+  3 | Copyright (c) 2021 Matteo Collina
+  4 |
+
+Expected ';', '}' or <eof>
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/LICENSE [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+
+./node_modules/thread-stream/test/syntax-error.mjs:2:7
+Parsing ecmascript source code failed
+  1 | // this is a syntax error
+> 2 | import
+    |       ^
+  3 |
+
+Expected 'from', got '<eof>'
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/syntax-error.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+
+./node_modules/thread-stream/test
+Module not found: Can't resolve './ROOT/node_modules/thread-stream/test/close-on-gc.js'
+server relative imports are not implemented yet. Please try an import relative to the file you are importing from.
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test
+Module not found: Can't resolve './ROOT/node_modules/thread-stream/test/create-and-exit.js'
+server relative imports are not implemented yet. Please try an import relative to the file you are importing from.
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/thread-management.test.js:112:17
+Module not found: Can't resolve '/ROOT/node_modules/thread-stream/test/close-on-gc.js'
+  110 | test('close the work if out of scope on gc', { skip: !global.WeakRef }, async function (t) {
+  111 |   const dest = file()
+> 112 |   const child = fork(join(__dirname, 'close-on-gc.js'), [dest], {
+      |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 113 |     execArgv: ['--expose-gc']
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 114 |   })
+      | ^^^^^
+  115 |
+  116 |   const [code] = await once(child, 'exit')
+  117 |   t.equal(code, 0)
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/thread-management.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/thread-management.test.js:13:17
+Module not found: Can't resolve '/ROOT/node_modules/thread-stream/test/create-and-exit.js'
+  11 | test('exits with 0', async function (t) {
+  12 |   const dest = file()
+> 13 |   const child = fork(join(__dirname, 'create-and-exit.js'), [dest])
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 |   const [code] = await once(child, 'exit')
+  16 |   t.equal(code, 0)
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/thread-management.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/esm.test.mjs:4:1
+Module not found: Can't resolve 'desm'
+  2 | import { readFile } from 'fs'
+  3 | import ThreadStream from '../index.js'
+> 4 | import { join } from 'desm'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { pathToFileURL } from 'url'
+  6 | import { file } from './helper.js'
+  7 |
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/esm.test.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/multibyte-chars.test.mjs:4:1
+Module not found: Can't resolve 'desm'
+  2 | import { readFile } from 'fs'
+  3 | import ThreadStream from '../index.js'
+> 4 | import { join } from 'desm'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { file } from './helper.js'
+  6 |
+  7 | test('break up utf8 multibyte (sync)', (t) => {
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/multibyte-chars.test.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/bench.js:3:15
+Module not found: Can't resolve 'fastbench'
+  1 | 'use strict'
+  2 |
+> 3 | const bench = require('fastbench')
+    |               ^^^^^^^^^^^^^^^^^^^^
+  4 | const SonicBoom = require('sonic-boom')
+  5 | const ThreadStream = require('.')
+  6 | const Console = require('console').Console
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/bench.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/commonjs-fallback.test.js:14:22
+Module not found: Can't resolve 'pino-elasticsearch'
+  12 |   t.plan(6)
+  13 |
+> 14 |   const modulePath = require.resolve('pino-elasticsearch')
+     |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 |   t.match(modulePath, /.*\.zip.*/)
+  16 |
+  17 |   const stream = new ThreadStream({
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/commonjs-fallback.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/base.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { readFile } = require('fs')
+  6 | const { file } = require('./helper')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/base.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/bench.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const ThreadStream = require('..')
+  6 | const { file } = require('./helper')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/bench.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/bundlers.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { file } = require('./helper')
+  6 | const ThreadStream = require('..')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/bundlers.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/commonjs-fallback.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { MessageChannel } = require('worker_threads')
+  6 | const { once } = require('events')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/commonjs-fallback.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/context.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const ThreadStream = require('..')
+  6 | const { version } = require('../package.json')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/context.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/end.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { readFile } = require('fs')
+  6 | const { file } = require('./helper')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/end.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/esm.test.mjs:1:1
+Module not found: Can't resolve 'tap'
+> 1 | import { test } from 'tap'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { readFile } from 'fs'
+  3 | import ThreadStream from '../index.js'
+  4 | import { join } from 'desm'
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/esm.test.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/event.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const ThreadStream = require('..')
+  6 |
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/event.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/helper.js:6:11
+Module not found: Can't resolve 'tap'
+  4 | const { tmpdir } = require('os')
+  5 | const { unlinkSync } = require('fs')
+> 6 | const t = require('tap')
+    |           ^^^^^^^^^^^^^^
+  7 |
+  8 | const files = []
+  9 | let count = 0
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/helper.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/indexes.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const indexes = require('../lib/indexes')
+  5 |
+  6 | for (const index of Object.keys(indexes)) {
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/indexes.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/multibyte-chars.test.mjs:1:1
+Module not found: Can't resolve 'tap'
+> 1 | import { test } from 'tap'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { readFile } from 'fs'
+  3 | import ThreadStream from '../index.js'
+  4 | import { join } from 'desm'
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/multibyte-chars.test.mjs [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/never-drain.test.js:1:18
+Module not found: Can't resolve 'tap'
+> 1 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  2 | const ThreadStream = require('../index')
+  3 | const { join } = require('path')
+  4 |
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/never-drain.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/pkg/index.js:7:18
+Module not found: Can't resolve 'tap'
+   5 |  */
+   6 |
+>  7 | const { test } = require('tap')
+     |                  ^^^^^^^^^^^^^^
+   8 | const { join } = require('path')
+   9 | const { file } = require('../helper')
+  10 | const ThreadStream = require('../..')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/pkg/index.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/pkg/pkg.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const config = require('./pkg.config.json')
+  5 | const { promisify } = require('util')
+  6 | const { unlink } = require('fs/promises')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/pkg/pkg.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/post-message.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { once } = require('events')
+  6 | const { MessageChannel } = require('worker_threads')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/post-message.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/string-limit-2.test.js:3:11
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const t = require('tap')
+    |           ^^^^^^^^^^^^^^
+  4 |
+  5 | if (process.env.CI) {
+  6 |   t.skip('skip on CI')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/string-limit-2.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/string-limit.test.js:3:11
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const t = require('tap')
+    |           ^^^^^^^^^^^^^^
+  4 |
+  5 | if (process.env.CI) {
+  6 |   t.skip('skip on CI')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/string-limit.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/thread-management.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { fork } = require('child_process')
+  5 | const { join } = require('path')
+  6 | const { readFile } = require('fs').promises
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/thread-management.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/transpiled.test.js:3:18
+Module not found: Can't resolve 'tap'
+  1 | 'use strict'
+  2 |
+> 3 | const { test } = require('tap')
+    |                  ^^^^^^^^^^^^^^
+  4 | const { join } = require('path')
+  5 | const { file } = require('./helper')
+  6 | const ThreadStream = require('..')
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/transpiled.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/context.test.js:7:1
+Module not found: Can't resolve 'why-is-node-running'
+   5 | const ThreadStream = require('..')
+   6 | const { version } = require('../package.json')
+>  7 | require('why-is-node-running')
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | test('get context', (t) => {
+  10 |   const stream = new ThreadStream({
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/context.test.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/thread-stream/test/helper.js:33:15
+Module not found: Can't resolve 'why-is-node-running'
+  31 |
+  32 | if (process.env.SKIP_PROCESS_EXIT_CHECK !== 'true') {
+> 33 |   const why = require('why-is-node-running')
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |   setInterval(why, 10000).unref()
+  35 | }
+  36 |
+
+
+
+Import trace:
+  Client Component SSR:
+    ./node_modules/thread-stream/test/helper.js [Client Component SSR]
+    ./node_modules/thread-stream/index.js [Client Component SSR]
+    ./node_modules/pino/lib/transport.js [Client Component SSR]
+    ./node_modules/pino/pino.js [Client Component SSR]
+    ./node_modules/@walletconnect/logger/dist/index.es.js [Client Component SSR]
+    ./node_modules/@walletconnect/utils/dist/index.js [Client Component SSR]
+    ./node_modules/@walletconnect/ethereum-provider/dist/index.js [Client Component SSR]
+    ./node_modules/@wagmi/connectors/dist/esm/walletConnect.js [Client Component SSR]
+    ./node_modules/@rainbow-me/rainbowkit/dist/index.js [Client Component SSR]
+    ./app/verify-identity/page.tsx [Client Component SSR]
+    ./app/verify-identity/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+
+[debug] [2025-12-07T06:11:15.542Z] Error: ENOENT: no such file or directory, open '/Users/sarthakgupta/microloans2/.next/server/middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.

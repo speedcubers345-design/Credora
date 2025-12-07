@@ -1,0 +1,24 @@
+[
+  {
+    "walletAddress": "0x1C7176400C66069B7819a3904bd18A6Af38C9625",
+    "uniquePersonID": "0x50bc322f6ec79d1d556830c805ecedb5f4c4d268fbc2a0ff25014835379f850a",
+    "faceEmbeddingHash": "0x3aa3f3902a561168eb99e74d186cdc9888c4adfa329ff0f9d1c8e02ddc2e2b18",
+    "deviceFingerprintHash": "0xdc5ff728a4c9da6fea32d1361f1af140b8c277a775e3bab700e2796e00e13507",
+    "behaviourSignatureHash": "0xf4189584b4e0a54bd3002d2e3115e9d626ab2a02f6983575b965a5b173772c85",
+    "sybilResistanceLevel": 5,
+    "identityStrengthScore": 100,
+    "timestampCreated": "2025-12-07T03:23:50.182Z",
+    "revocationStatus": false
+  },
+  {
+    "walletAddress": "0x7547e7De02A4Cfe06E32E0Dd4f6BB7137Ce15270",
+    "uniquePersonID": "0x6c631f3d99e3b28298d853e63672fbd13d22d26c5c1174a91e24d46feb888783",
+    "faceEmbeddingHash": "0x2b39c84958651cbb6d8b6cbc2a6b0597e253c062bc897d5d207f33bacaf7443d",
+    "deviceFingerprintHash": "0xdc5ff728a4c9da6fea32d1361f1af140b8c277a775e3bab700e2796e00e13507",
+    "behaviourSignatureHash": "0xda64774af5885890aa4a466e15187216572a6240be2a2577c16bfd2dfba3dee0",
+    "sybilResistanceLevel": 5,
+    "identityStrengthScore": 100,
+    "timestampCreated": "2025-12-07T03:36:39.437Z",
+    "revocationStatus": false
+  }
+]
